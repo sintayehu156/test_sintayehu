@@ -9,6 +9,12 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+fixtures = [
+    "Workspace",
+    "Role",
+    "Custom DocPerm"
+    ]
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/test_sintayehu/css/test_sintayehu.css"
 # app_include_js = "/assets/test_sintayehu/js/test_sintayehu.js"

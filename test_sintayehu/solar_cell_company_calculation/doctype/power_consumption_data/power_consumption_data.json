@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer}-{customer_entry_counter:04d}",
+ "creation": "2024-08-05 19:48:17.960093",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "column_break_0cgd",
+  "date",
+  "section_break_ie52",
+  "year",
+  "month",
+  "consumption_type",
+  "column_break_c3ga",
+  "tariff_period",
+  "timestamp",
+  "power_consumption",
+  "amended_from",
+  "customer_entry_counter"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Power Consumption Data",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "tariff_period",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tariff Period",
+   "options": "\nLow\nHigh",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "read_only": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Timestamp"
+  },
+  {
+   "fieldname": "power_consumption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Power Consumption"
+  },
+  {
+   "fieldname": "column_break_0cgd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ie52",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_c3ga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consumption_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Consumption Type",
+   "options": "\nKWH\nKW",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_entry_counter",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Customer Entry Counter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-07 11:51:19.788964",
+ "modified_by": "Administrator",
+ "module": "Solar Cell Company Calculation",
+ "name": "Power Consumption Data",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Accounting Team"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Sales Team",
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

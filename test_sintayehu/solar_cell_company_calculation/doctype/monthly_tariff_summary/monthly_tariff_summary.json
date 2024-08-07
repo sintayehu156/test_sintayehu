@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer}-{month}-{year}",
+ "creation": "2024-08-06 20:02:45.615142",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "column_break_dsmo",
+  "month",
+  "year",
+  "section_break_81ud",
+  "average_kwh_in_a_low_tariff_period",
+  "average_kwh_in_a_high_tariff_period",
+  "column_break_bs9x",
+  "low_tariff",
+  "high_tariff",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Monthly Tariff Summary",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "average_kwh_in_a_low_tariff_period",
+   "fieldtype": "Float",
+   "label": "Average KWH in a low tariff period",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average_kwh_in_a_high_tariff_period",
+   "fieldtype": "Float",
+   "label": "Average KWH in a high tariff period",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dsmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "low_tariff",
+   "fieldtype": "Float",
+   "label": "Low Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "high_tariff",
+   "fieldtype": "Float",
+   "label": "High Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_81ud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bs9x",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-07 11:44:48.600035",
+ "modified_by": "Administrator",
+ "module": "Solar Cell Company Calculation",
+ "name": "Monthly Tariff Summary",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
