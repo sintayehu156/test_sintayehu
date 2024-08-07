@@ -2,31 +2,53 @@
 
 Solar Cell Company Calculation
 
+
+## Introduction
+The test_sintayehu app is a custom Frappe application designed to manage power consumption data and calculate tariffs for solar cell companies. This guide will walk you through the setup of Frappe using Bench, site configuration, and the installation of the test_sintayehu app.
+
+## Prerequisites
+
+Frappe Bench installed and running.
+A working Frappe site (e.g., test_sintayehu.com).
+
 ### Installation
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+1. Access Your Bench Directory
+Navigate to the directory where your Frappe Bench is initialized. Replace <project-directory> with your project directory name.
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
-bench install-app test_sintayehu
-```
+cd <project-directory>
 
-### Contributing
+2. Get the test_sintayehu App
+Fetch the test_sintayehu app from the repository. Use the appropriate repository URL.
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+bench get-app https://github.com/sintayehu156/test_sintayehu.git
 
-```bash
-cd apps/test_sintayehu
-pre-commit install
-```
+3. Install the App on Your Site
+Install the test_sintayehu app on your Frappe site. Replace <site-name> with the name of your site (e.g., test_sintayehu.com).
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+bench --site <site-name> install-app test_sintayehu
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+4. Run Migrations
+Update the site’s database with the app’s schema changes.
+
+bench --site <site-name> migrate
+
+5. Start Bench
+To see the changes and use the app, start the Bench server.
+
+bench start
+
+6. Access the Application
+Open your browser and navigate to your Frappe site to access the test_sintayehu app. Replace <site-name> with your actual site name.
+
+http://<site-name>:8000
+
+Example:
+http://test_sintayehu.com:8000
+
+### Conclusion
+By following these steps, you will have the test_sintayehu app installed and configured on your Frappe Bench setup.
+
 
 ### License
 
