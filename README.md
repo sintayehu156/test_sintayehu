@@ -46,6 +46,20 @@ http://site-name:8000
 Example:
 http://test_sintayehu.com:8000
 
+
+7. after installing the app on the site and starting the bench, log in with credentials sales team, then after switching to the desk, on the side open the solar cell calculator section, the i have created 3 shortcuts,
+
+a. the customer to record the customer name and phone.
+ 
+b. the power consumption data with the fields, customer, consumption type (KWH, KW), tariff period ( LOW, HIGH) automatically filled depending on the time the record time and power consumption. the document is submitted with a serialized counter for each customer.
+
+c. the monthy tariff summary, calculates the monthly law and high tariffs for specific customer by fetching datas from the power consumption data.
+
+
+lastly i created a script report to see the power consumtion of each customer by KWH and KW, and i added a filter by a customer.
+
+ 
+
 ### Conclusion
 By following these steps, you will have the test_sintayehu app installed and configured on your Frappe Bench setup.
 
